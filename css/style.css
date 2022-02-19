@@ -1,0 +1,812 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: rgb(92, 48, 136);
+    width: 100%;
+    height: 30px;
+}
+
+.text-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    vertical-align: middle;
+    color: gainsboro;
+    padding-top: 2px ;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    margin-top: -26px;
+    margin-left: 20px;
+}
+
+.bandeira-brasil {
+    margin-top:2px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.clock-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 896px;
+  margin-top: -29px;
+  color:gainsboro
+}
+
+.support-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1197px;
+    margin-top: -29px;
+    color:gainsboro
+}
+
+.container {
+    width: 100%;
+    height: 90px;
+    margin: auto ;
+    background-color: rgb(135, 64, 201);
+    padding-top: 26px;
+    display: inline-block;
+}
+
+.search-box {
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -105px;
+    border-radius: 5px;
+    background-color: white;
+    height: 50px;
+    width: 700px;
+}
+
+.search-text {
+    display: fill;
+    margin-top: 11px;
+    height: 30px;
+    width: 600px;
+    margin-left: -70px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.search-icon {
+    margin-top: -32px;
+    margin-left: 620px;
+    font-size: 30px;
+    color: rgb(135, 64, 201);
+}
+
+.search-box:hover > .search-icon {
+    font-size: 34px;
+}
+
+.renove-logo {
+    margin-top: -40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.renove-text {
+    font-family: 'moderna';
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    margin-top: -1px;
+    margin-left: -22px;
+}
+
+.menu {
+    background-color: white;
+    vertical-align: top;
+    height: 10px;
+}
+
+.menu-icon {
+    font-size: 20px;
+    color: purple;
+    margin-left: 45px;
+    color: gainsboro;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(65, 65, 65);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.angle-down {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 6px;
+    font-size: 19px;
+    margin-left: 8px;
+}
+
+.user-icon {
+
+    text-align: right;
+    margin-top: -42px;
+    margin-right: 290px;
+    color: white;
+    font-size: 30px;
+}
+
+.user-text {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: -26px;
+    margin-right: 190px;
+    color: white;
+}
+
+.favorite-icon {
+    text-align: right;
+    margin-top: -38px;
+    margin-right: 120px;
+    color: white;
+    font-size: 27px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.favorite-icon:after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.favorite-icon:hover {
+    font-size: 30px;
+}
+
+.bag-icon {
+    text-align: right;
+    margin-top: -32px;
+    margin-right: 70px;
+    color: white;
+    font-size: 27px;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bag-icon::after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bag-icon:hover {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+}
+
+.search-product {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(46, 45, 45);
+    margin-left: 80px;
+}
+
+.product-list {
+    height: 700px;
+    background: linear-gradient(rgb(199, 199, 199), rgb(184, 184, 184));
+}
+
+.product {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 80px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product:after {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.product-bag-icon:hover {
+    font-size: 28px;
+}
+.product-fav-icon:hover {
+    font-size: 29px;
+}
+
+.product-description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(46, 45, 45);
+    margin-left: 10px ;
+}
+
+.product-price {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+.product-payment {
+    font-size: 13px;
+    color: rgb(46, 45, 45);
+    margin-top: -26px;
+    margin-left: 10px;
+}
+
+.product-fav-icon {
+    color: rgb(135, 64, 201);
+    font-size: 27px;
+    margin-left: 150px;
+}
+
+.product-bag-icon {
+    color: rgb(78, 75, 90);
+    font-size: 27px;
+    margin-left: 10px;
+}
+
+.product-icon {
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer {
+    background-color: rgb(135, 64, 201);
+    bottom: 0;
+    width: 100%;
+    height: 330px;
+}
+
+.footer2 {
+    background-color: rgb(92, 48, 136);
+    width: 100%;
+    height: 100px;
+}
+
+.footer2-text {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-right: 55px;
+    margin-left: 26px;
+}
+
+.description {
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.icon-footer2 {
+    display: inline-block;
+    vertical-align: top;
+    color:white;
+    font-size: 50px;
+    padding-top: 25px;
+    margin-left: 90px;
+}
+
+#credit-card-icon {
+margin-left: 125px;
+}
+
+.renove-logo-footer {
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    margin-left: 510px;
+    margin-top: -15px;
+}
+
+.renove-text-footer {
+    font-family: 'moderna';
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-left: -22px;
+
+}
+
+.footer-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-left: 100px;
+}
+
+.footer-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-sections {
+    margin-left: 500px;
+    margin-top: -200px;
+}
+
+.icon-footer {
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-size: 16px;
+    margin-left: 336px ;
+    margin-top: 15px;
+}
+
+#footer-title-social {
+    text-align: right;
+    margin-right: 400px;
+}
+
+#footer-title-support {
+    text-align: right;
+    margin-right: 180px;
+    margin-top: -135px;
+}
+
+.product-info {
+    width: 1220px;
+    background-color: rgb(240, 234, 234);
+    padding: 35px;
+    padding-bottom: 100px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.back-button {
+    background-color: whitesmoke;
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 65, 65);
+}
+
+.directory {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    margin-top: 53px;
+}
+
+.delivery-text {
+    display: flex;
+    vertical-align: top;
+    height: 20px;
+    background-color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 11px;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+    width: 150px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 470px;
+    float: right;
+
+}
+
+.share-icon {
+float: right;
+vertical-align: top;
+margin-right: -280px;
+font-size: 25px;
+margin-top: 10px;
+color: rgb(65, 65, 65) ;
+}
+
+.product-title {
+    float: right;
+    margin-right: 350px;
+    margin-top: -370px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 65, 65);
+    font-size: 12px;
+}
+
+.star-icon {
+    display: inline-block;
+    color: rgb(228, 228, 1);
+    vertical-align: top;
+    margin-top: -310px;
+
+}
+
+.feedback-text {
+    float: right;
+    margin-right: 540px;
+    margin-top: -300px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 65, 65);
+    font-size: 12px;
+}
+
+.feedback-number {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 65, 65);
+    font-size: 12px;
+    margin-top: -18px;
+    margin-left: 25px;
+    
+}
+
+.description-area {
+    float: right;
+    margin-right: 345px;
+    margin-top: -270px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 65, 65);
+    width: 285px;
+}
+
+.description-product-page {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:  rgb(32, 32, 32);;
+font-size: 14px;
+}
+
+.description-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    color: rgb(65, 65, 65);
+}
+
+.cep-box{
+    border-radius: 5px;
+    background-color: white;
+    height:33px;
+    width: 235px;
+    float: right;
+    margin-right: 347px;
+    margin-top: -60px;
+    margin-bottom: -100px;
+    padding-right: 50px;
+    padding-top: 2px;
+}
+
+.freight-title {
+    float: right;
+    margin-right: 540px;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+}
+
+.cep-number {
+    display: fill;
+    height: 30px;
+    width: 250px;
+    margin-left: 15px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.location-icon {
+    text-align: right;
+    margin-top: -25px;
+    margin-right: -40px;
+    font-size: 20px;
+    color: rgb(78, 75, 90);
+}
+
+.stopwatch-icon {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    font-size: 30px;
+    color: whitesmoke;
+    margin-left: -50px;
+    margin-top: 3px;
+}
+
+.offer {
+    background-color: rgb(135, 64, 201);
+    border-radius: 5px;
+    color: whitesmoke;
+    float: right;
+    margin-right: 5px;
+    margin-top: -413px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+    height: 50px;
+}
+
+#timer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -20px;
+    font-size: 12px;
+    margin-left: 2px;
+
+}
+
+.product-details {
+
+    float: right;
+    margin-right: 5px;
+    margin-top: -363px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(65, 65, 65);
+
+}
+
+#size-list {
+    background-color: gainsboro;
+    font-size: 15px;
+    border: none;
+    height: 30px;
+    width: 150px;
+
+}
+
+#quantity {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+#quantity-select {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background:none;
+    font-size: 12px;
+    height: 30px;
+    width: 100px;
+    margin-top: 7px;
+
+}
+
+#available-quantity {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+#buy-button {
+    margin-top: 15px;
+    width: 300px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    color: whitesmoke;
+    background-color: rgb(135, 64, 201) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#buy-button:hover {
+    background-color: rgb(98, 45, 148) ;
+}
+
+#buy-button::after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#bag-button {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(135, 64, 201) ;
+    color: rgb(135, 64, 201);
+    background-color: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#bag-button:hover {
+background-color:  rgb(226, 224, 224);
+}
+
+#bag-button::after {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-buttons {
+    flex-wrap: wrap;
+    margin-bottom: 13px;
+    
+    
+}
+
+.circle-check-icon {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(65, 65, 65);
+}
+
+.safe-buy {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -10px;
+    width: 270px;
+    font-size: 12px;
+    margin-left: 3px;
+    text-align: justify;
+}
+
+.form-payment {
+    margin-left: 18px;
+}
+
+.copyright-text {
+    margin-top: 140px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1362px) {
+    .header {
+        display: none ;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .search-box {
+        width: 550px;
+        margin-left: 350px
+        ;
+    }
+
+    .search-text {
+        margin-left: 15px ;
+    }
+
+    .search-icon {
+        margin-left: 470px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 1220px) {
+
+    .bag-icon {
+        margin-left: 600px;
+        margin-top: -33px;
+    }
+
+    .search-box {
+        width: 600px;
+        margin-left: 180px
+        ;
+    }
+
+    .search-text {
+        margin-left: 30px ;
+    }
+
+    .search-icon {
+        margin-left: 520px;
+    }
+
+    .renove-text {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1110px) {
+    .user-icon, .user-text, .favorite-icon{
+        display: none ;
+    }
+
+    .bag-icon {
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .renove-logo {
+        margin-left: -15px;
+    }
+
+    .bag-icon {
+        margin-left: 550px;
+        margin-top: -40px;
+    }
+
+    .search-box {
+        width: 400px;
+        margin-left: 130px
+        ;
+    }
+
+    .search-text {
+        margin-left: 15px ;
+    }
+
+    .search-icon {
+        margin-left: 330px;
+    }
+
+    .renove-text, #support-text {
+        display: none;
+    }
+
+    .menu-text {
+        margin-right: -25px ;
+    }
+
+    .angle-down {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .renove-logo {
+        margin-left: -20px;
+    }
+.search-box{
+    width: 290px;
+    margin-left: 110px;
+}
+
+.search-icon {
+    margin-left: 220px;
+}
+
+.bag-icon {
+    margin-left: 440px;
+}
+    .menu {
+        display: none;
+    }
+
+}

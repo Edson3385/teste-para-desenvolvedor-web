@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-renove-digital.ico" type="image/x-icon">
+    <style>
+        @font-face {
+
+            font-family: 'moderna';
+            src: url('fonts/MODERNA_.TTF');
+            
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/24e050f4c0.js" crossorigin="anonymous"></script>
+    <title>Renove Digital</title>
+</head>
+<body>
+    <div class="header">
+
+        <img src="images/bandeira-brasil-icon.png" alt="Bandeira do Brasil"    class="bandeira-brasil">
+        <p class="text-header"><strong>Entregamos para todo o Brasil!</strong></p>
+    
+        <div class="clock-icon"><i class="fa-regular fa-clock"></i></div>
+        <p class="text-header" style="text-align: right; margin-top: -18px;padding-right:  200px;"><strong>Atendimento das 8h as 18h de seg. a sexta<strong></p>
+    
+        <div class="support-icon"><i class="fa-solid fa-phone"></i></div>
+        <p class="text-header" style="text-align: right; margin-top: -18px;padding-right:  40px;">(13) 98800-5400</p>
+    
+    </div>
+
+    <div class="container">
+        <div class="renove-logo"><img src="images/logo-renove.png" alt="Renove Digital"></div>
+        <h1 class="renove-text">renove</h1>
+    
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="Busque aqui o seu produto..">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    
+        </div>
+            <div class="user-icon"><i class="fa-regular fa-circle-user"></i></div>
+            <h2 class="user-text">Olá, Carlos.</h2>
+            <div class="favorite-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="bag-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+    </div>
+
+    <div class="menu" style="height:30px">
+        <div class="menu-icon"> 
+            <i class="fa-solid fa-bars" style="color: rgb(135, 64, 201);"></i>
+        </div>
+        <div class="menu-text" style="margin-top: -8px; margin-left: 15px;">
+            <h3><a href="">Todas as categorias</a></h3>
+        </div>
+        <div class="angle-down"><i class="fa-solid fa-angle-down"></i></div>
+        <div class="menu-text" id="best-seller" style="margin-top: -8px; margin-left: 50px;">
+            <h3><a href="#">Mais vendidas</a></h3>
+        </div>
+        <div class="menu-text" id ="daily-discount" style="margin-top: -8px; margin-left: 50px;">
+            <h3><a href="#">Ofertas do dia</a></h3>
+        </div>
+        <div class="menu-text" id="support-text" style="margin-top: -8px; margin-left: 50px;">
+            <h3><a href="#">Atendimento ao Cliente</a></h3>
+        </div>
+    </div>
+
+    <div class="product-list">
+        <button class="back-button"><a href="index.html"><strong>Voltar a lista</strong></a></button>
+        <p class="directory"><a href="index.html">Início</a> > <a href="index.html">Camisetas </a> ><a href="product-page1.html"> Camiseta Cinza - Woman</a></p>
+        <div class="product-info">
+            <img src="images/t-shirt-woman-expanded.jpeg" alt="T-shirts">
+            <div class="delivery-text"><p>Entregando normalmente</p></div>
+            <div class="share-icon"><a href=""><i class="fa-solid fa-share-nodes"></i></a></div>
+            <div class="product-title">
+                <h1>Camiseta Cinza - Woman</h1>
+            </div>
+            <div class="star-icon" style="margin-left: 590px"><i class="fa-solid fa-star"></i></div>
+            <div class="star-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="star-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="star-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="star-icon"><i class="fa-solid fa-star-half-stroke"></i>
+            <p class="feedback-number">(201)</p></div>
+            <p class="feedback-text"><a href="#">Avaliar produto</a></p>
+            <div class="description-area">
+                <h3 class="description-product-page">Descrição</h3>
+                <p class="description-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eaque obcaecati voluptatibus nemo sapiente error, iure ex est eveniet! Doloremque numquam et iusto quod facere ratione adipisci veritatis, eius explicabo.</p>
+            </div>
+            <h3 class="freight-title">Calcular Frete</h3>
+            <div class="cep-box">
+                <input type="text" placeholder="Informe seu CEP" class="cep-number">
+                <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+            </div>
+            <div class="offer">
+                <div class="stopwatch-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3 style="margin-top: -40px;">OFERTA EXPIRA EM:</h3>
+                <p id="timer"></p>
+            </div>
+            <div class="product-details">
+                <p style="font-size: 14px;">De <del>R$ 250,90</del> por</p>
+                <p style="font-size: 30px; margin-top: -15px;">R$ 159,99</p>
+                <p style="font-size: 12px; margin-top: -25px;">em 10x de <span style="color:rgb(3, 148, 3)">R$ 16,00</span></p>
+                <select name="Tamanhos" id="size-list">
+                <option value="G">Tamanho G</option>
+                <option value="M">Tamanho M</option>
+                <option value="P">Tamanho P</option>
+            </select><br>
+            <p id="quantity">Quantidade: </p>
+            <select name="Unidades" id="quantity-select">
+                <option value="1">1 unidade</option>
+                <option value="2">2 unidades</option>
+                <option value="3">3 unidades</option>
+                <option value="4">4 unidades</option>
+                <option value="5">5 unidades</option>
+                <option value="6">6 unidades</option>
+                <option value="7">7 unidades</option>
+                <option value="8">8 unidades</option>
+                <option value="9">9 unidades</option>
+                <option value="10">10 unidades</option>
+            </select>
+            <p id="available-quantity">(10 unidades disponíveis)</p>
+            <div class="product-buttons"><button id="buy-button"><strong>Comprar agora</strong></button></div>
+            <div class="product-buttons"><button id="bag-button"><strong>Adicionar a sacola</strong></button></div>
+            <div class="circle-check-icon"><i class="fa-regular fa-circle-check"></i></div>
+            <div class="safe-buy">
+                <p><span style="color:rgb(60, 60, 255)">Compra Garantida</span>, receba o produto que está esperando ou devolvemos o dinheiro.</p>
+            </div>
+            <div class="form-payment"><img src="images/form-of-payment.png" alt="Formas de Pagamento"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <div class="icon-footer2">
+            <i class="fa-solid fa-truck"></i>
+        </div>
+            <div class="footer2-text" id="free-shipping">
+                <h3>Frete Grátis</h3>
+                <p class="description">acima de R$:200,00</p>
+            </div>
+    
+    
+        <div class="icon-footer2" id="credit-card-icon"><i class="fa-solid fa-credit-card"></i></div>
+        
+        <div class="footer2-text" id="credit-card-text">
+            <h3>Em Até 10x Sem Juros</h3>
+            <p class="description">no cartão de crédito</p>
+        </div>
+    
+        <div class="icon-footer2"><i class="fa-solid fa-box-open"></i></div>
+        <div class="footer2-text" id="fast-delivery-text">
+            <h3>Produtos à Pronta Entrega</h3>
+            <p class="description">produto em mãos fácil e rápido</p>
+        </div>
+    
+    </div>
+    
+    <div class="footer">
+        <div class="renove-logo-footer"><img src="images/logo-renove.png" alt="Renove Digital"></div>
+        <h1 class="renove-text-footer">renove</h1>
+    
+        <div>
+            <h3 class="footer-title" style="margin-left: 200px;">Departamento</h3>
+            <p class="footer-text" style="margin-left: 200px;"> Beleza e perfumaria <br><br>
+                Moda <br><br>
+                Saúde <br><br>
+                Suplementos e vitaminas
+    
+            </p>
+    
+            <p class="footer-text" style="margin-left: 50px;"> Kit mãe&filha<br><br>
+                Kit pai&filho<br><br>
+                Kit casal<br><br>
+                T-shirts
+            </p>
+        </div>
+    
+    
+    
+    
+        <div class="footer-sections">
+            <h3 class="footer-title">Institucional</h3>
+            <p class="footer-text"> Quem somos <br><br>
+                Contato <br><br>
+                Meus pedidos <br><br>
+                Políticas de privacidade
+            </p>
+        </div>
+    
+        <div class="footer-sections">
+            <h3 class="footer-title" id="footer-title-social">Redes sociais</h3>
+            <div class="icon-footer"><i class="fa-brands fa-facebook-square"></i></div>
+            <p class="footer-text" style="margin-top: 15px; margin-left: 0px;">Loja fake</p><br>
+            <div class="icon-footer"><i class="fa-brands fa-instagram"></i></div>
+            <p class="footer-text" style="margin-top: 15px; margin-left: 0px;">Loja fake</p>
+        </div>
+    
+        <div class="footer sections">
+            <h3 class="footer-title" id="footer-title-support">Central de Ajuda</h3>
+            <p class="footer-text" style="margin-left: 76%;">Praia Grande - SP</p> <br>
+            <p class="footer-text" style="font-size:20px; margin-left: 76%; margin-top: -15px;">(13) 99999-9999</p><br>
+            <p class="footer-text" style="margin-left:76%; margin-top: -13px ;">Segunda a sexta: 8h30 às 22h <br>
+                Sábado: Fechado <br>
+                Domingo: Fechado
+            </p>
+        </div>
+    </div>
+     
+</body>
+</html>
